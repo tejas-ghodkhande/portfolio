@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Tejas Ghodkhande</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/688a88b30d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="main" class="center">
+        <div id="particles-js"></div>
+        <div class="user_info">
+            <h2 class="user_name">Hello</h2>
+            <h1 class="user_name">I'm,Tejas Ghodkhande</h1>
+            <p>Front-End Developer and Programmer</p>
+            <a href="#About" class="btn">About Me</a>
+        </div>
+        <div class="user_img">
+            <img src="./TejasPicture.jpeg" alt="Image Not Found" />
+        </div>
+    </section>
+
+    <!-- about -->
+    <section class="about center" id="About">
+        <div class="center">
+            <h1 class="about_heading">About</h1>
+            <p>
+                Hello Everyone! My name is Tejas Ghodkhande, and I'm Programmer solved more than 200 questions on LeetCode And GeeksForGeeks. I have a diverse set of skills,ranging from Programming, to HTML + CSS + javascript.
+                <div>
+                    <br>
+                    <a href="https://auth.geeksforgeeks.org/user/tejasghodkhande2907/practice/" target="_blank_" style="text-decoration: none;color:green;font-size: 1.5rem;font-weight: bold;">GeeksforGeeks &nbsp;<i style="font-size:11px" class="fas fa-arrow-right"></i></a>
+                    <br><br>
+                    <a href="https://leetcode.com/tejas_2701/" target="_blank_" style="text-decoration: none;color:yellow;font-size: 1.5rem;font-weight: bold;">LeetCode &nbsp;<i style="font-size:11px" class="fas fa-arrow-right"></i></a>
+
+                </div>
+            </p>
+
+        </div>
+        <img src="img1.gif" alt="">
+    </section>
+    <section class="skills center" id="Skills">
+        <p class="skill_head">Skills</p>
+        <div class="skill_box center">
+            <div class="box">
+                <i class="fab fa-html5 fa-4x"></i>
+                <p>HTML</p>
+            </div>
+            <div class="box">
+                <i class="fab fa-css3-alt fa-4x"></i>
+                <p>CSS</p>
+            </div>
+            <div class="box">
+                <i class="fab fa-js-square fa-4x"></i>
+                <p>Javascript</p>
+            </div>
+
+            <!-- <div class="box">
+                <i class="fab fa-node-js fa-4x"></i>
+                <p>Node Js</p>
+            </div> -->
+            <div class="box">
+                <i class="fas fa-desktop fa-4x"></i>
+                <p>Data Structures and Algorithms</p>
+            </div>
+        </div>
+    </section>
+    <section class="projects center" id="Projects">
+        <h1 class="project_heading">Projects</h1>
+        <div class="container center">
+
+            <div class="main_box center">
+                <div class="icon center">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <div class="box">
+                    <h1>Weather App</h1>
+                    <p>
+                        Weather App using HTML, CSS and JS. https://openweathermap.org/api api used for this project
+                    </p>
+                    <div class="links">
+                        <a href="https://github.com/tejas-ghodkhande/Weather_App" target="_blank_">Github Repo<i class="fas fa-arrow-right"></i
+                ></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="center">
+        <h1>Stay Connected</h1>
+        <div class="social_media_icons">
+
+            <a href="https://github.com/tejas-ghodkhande" target="_blank_"><i class="fab fa-github"></i
+        ></a>
+
+            <a href="https://www.linkedin.com/in/tejas-ghodkhande-794311193/" target="_blank_"><i class="fab fa-linkedin"></i
+        ></a>
+        </div>
+    </footer>
+
+    <!-- Toggle -->
+    <div class="toggle center active" id="toggle">
+        <div class="box center">
+            <a href="#main" class="links center">
+                <i class="fas fa-home"></i>
+                <p>Home</p>
+            </a>
+        </div>
+        <div class="box center">
+            <a href="#About" class="links center">
+                <i class="fas fa-address-card"></i>
+                <p>About</p>
+            </a>
+            <input type="checkbox" name="" id="btn" />
+            <a href="#Skills" class="links center">
+                <i class="fas fa-sliders-h"></i>
+                <p>Skills</p>
+            </a>
+        </div>
+        <div class="box">
+            <a href="#Projects" class=" links center">
+                <i class="fas fa-tasks"></i>
+                <p>Projects</p>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles.js"></script>
+    <script>
+        const toggle = document.getElementById("toggle");
+        const btn = document.getElementById("btn");
+        const links = document.querySelectorAll(".links");
+
+        btn.addEventListener("click", (e) => {
+            toggle.classList.toggle("active");
+        });
+        links.forEach((e) => {
+            e.addEventListener("click", () => {
+                toggle.classList.toggle("active");
+            })
+        });
+    </script>
+</body>
+
+</html>
