@@ -11,6 +11,10 @@
     scroll-behavior: smooth;
 }
 
+nav {
+    position: fixed;
+}
+
 :root {
     --bg: #252a34;
     --bg-dark: #1d1d1d;
@@ -270,14 +274,15 @@ body {
 
 .projects .container {
     width: 100%;
+    display: flex;
     flex-wrap: wrap;
     z-index: 1;
 }
 
 .projects .container .main_box {
     width: 35em;
-    height: 12em;
-    margin: 0.5em 2em;
+    /* height: 12em; */
+    margin: 2em 0rem;
     justify-content: space-evenly;
     background: rgba(255, 255, 255, 0.116);
     backdrop-filter: blur(20px);
@@ -289,6 +294,10 @@ body {
     height: 150px;
     margin-left: 0.1em;
     font-size: 8em;
+}
+
+.projects .container .main_box .icon img {
+    width: 150px;
 }
 
 .projects .container .main_box .box {
@@ -316,6 +325,7 @@ p) {
 .projects .container .main_box .box .links a i {
     margin-left: 0.4em;
     transition: all 0.4s;
+    color: white;
 }
 
 .projects .container .main_box .box .links a:hover {
@@ -504,4 +514,8 @@ footer .social_media_icons a:hover i {
     body {
         font-size: 8px;
     }
+}
+
+a {
+    text-decoration: none;
 }
